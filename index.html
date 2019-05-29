@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Documnt</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <div >
+        <section class="container">
+            <div class="row">
+                <div class="col s5">
+                    <h4 class="titulo">Ordenação por Método Bolha ou Seleção</h4>       
+                    <h3>Insira os números para Ordenação:</h3>
+                   
+
+                    <textarea class="areaTexto" id="numeros"></textarea>
+                    
+                    <a class="waves-effect waves-light btn button_tamanho" onclick="ordenarBolha()">Ordenação por Bolha</a>
+                    <a class="waves-effect waves-light btn button1 button_tamanho" onclick="ordenarSelecao()">Ordenação por Seleção</a>
+            
+                </div>
+                <div class="col s7">
+                    <section class="container">
+                        <h1>Números ordenados</h1>
+                
+                        
+                        <div class="input-field cold s7">
+                            <p id="ordenados" class="p"></p>
+                        </div>    
+                
+                        <h1>Estatisticas</h1>
+                
+                        <div class="row">
+                        <div class="input-field cold s6">
+                            <p id="troc" class="p"></p>
+                            <p id="comp" class="p"></p>
+                            <p id="pass" class="p"></p>
+                            <p id="temp" class="p"></p>
+                        </div>
+                        </div>
+                    
+                        </section>
+                </div>
+            
+            </div>
+
+
+            
+
+        </section>
+    </div>
+</body>
+</html>
