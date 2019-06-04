@@ -172,6 +172,3 @@ function ordenarBolha(){
 function formatarData(data){
     return data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear();
 }
-
-/*ordenarSelecao();
-ordenarBolha();*/
