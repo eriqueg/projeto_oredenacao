@@ -29,8 +29,9 @@
 
 }
 .p{
-    color: pink;
+    color: #5b014b;
     font-size: 20px;
+    padding-left: 15%;
 }
 .button_tamanho_2{
     width: 100%;
