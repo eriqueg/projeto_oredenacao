@@ -6,6 +6,7 @@ function transfDec(vetor){
 }
 
 function ordenarInsercao(){
+    var t0 = performance.now();
     var vetor = [];
     var comp = 0;
     var troc = 0;
@@ -45,6 +46,18 @@ function ordenarInsercao(){
         }
     
     }
+    t1 = performance.now();
+    tempo = t1 - t0;
+    document.getElementById("ordenados").innerHTML = vetor;
+    passos = vetor.length - 1;
+    document.getElementById("troc").innerHTML = "Trocas realizadas: " + troc;
+    document.getElementById("comp").innerHTML = "Comparacoes realizadas: " + comp;
+    document.getElementById("pass").innerHTML = "Passos necessários: " + passos;
+    document.getElementById("temp").innerHTML = "Tempo decorrido: " + tempo;
+
+    let data = new Date;
+    localStorage.setItem(formatarData(data), vetor);
+
 
 }
 
