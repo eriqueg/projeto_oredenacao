@@ -32,4 +32,12 @@
     color: pink;
     font-size: 20px;
 }
+.button_tamanho_2{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.button2{
+    background-color: green !important;
+}
 

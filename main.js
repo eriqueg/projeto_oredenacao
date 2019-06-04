@@ -5,6 +5,49 @@ function transfDec(vetor){
     return vetor;
 }
 
+function ordenarInsercao(){
+    var vetor = [];
+    var comp = 0;
+    var troc = 0;
+    var numAnt = 0;
+    var troca = false;
+    let texto = document.getElementById("numeros").value;
+    vetor = texto.split(",");
+    transfDec(vetor)
+    console.log(vetor)
+
+    for(x = 1; x < vetor.length; x++){
+    
+        if(vetor[x] < vetor[x - 1]){
+            troca = true; 
+            for(y = x; troca ; y--){
+                
+                if(y - 1 >= 0){
+                    if(vetor[y] < vetor[y - 1]){
+                        troca = true;
+                        comp = comp + 1;
+                        troc = troc + 1;
+                        numAnt = vetor[y - 1];
+                        vetor[y - 1] = vetor[y];
+                        vetor[y] = numAnt;
+                    }else{
+                        comp = comp + 1;
+                        troca = false;
+                    } 
+                }else{
+                    troca = false;
+                }
+                
+                
+            }
+        }else{
+            comp = comp + 1;
+        }
+    
+    }
+
+}
+
 
 function ordenarSelecao (){
     var t0 = performance.now();
